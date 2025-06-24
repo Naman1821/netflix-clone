@@ -1,0 +1,37 @@
+/* SearchBar.css */
+
+.search__container {
+    padding: 20px;
+    background-color: #111;
+    color: white;
+}
+
+.search__input {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 12px 20px;
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    outline: none;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.search__input::placeholder {
+    color: #888;
+}
+
+.search__input:focus {
+    border-color: #e50914;
+    box-shadow: 0 0 6px #e50914;
+}
+
+.search__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 8px;
+}

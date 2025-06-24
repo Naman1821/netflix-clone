@@ -1,0 +1,12 @@
+/* src/components/GenreFilter.css */
+.genre-filter {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.genre-filter select {
+    padding: 8px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #555;
+}

@@ -1,0 +1,150 @@
+/* .modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal__content {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 700px;
+    color: white;
+    position: relative;
+}
+
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+    /* 👈 Add this */
+/* user-select: none;
+}
+
+.modal__close:hover {
+    transform: scale(1.2);
+    /* ✅ smooth pop effect */
+/* color: #ff4444;
+    transition: all 0.2s ease;
+}
+
+
+
+.modal__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.modal__desc {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+/* } */
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    /* ✅ smooth overlay */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal__content {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 700px;
+    color: white;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .modal__content {
+        width: 95%;
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    .modal__title {
+        font-size: 20px;
+    }
+
+    .modal__desc {
+        font-size: 13px;
+    }
+
+    iframe {
+        height: 200px !important;
+    }
+}
+
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.modal__close:hover {
+    transform: scale(1.2);
+    color: #ff4444;
+    transition: all 0.2s ease;
+}
+
+.modal__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.modal__desc {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
