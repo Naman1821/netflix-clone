@@ -4,11 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 // index.js or App.js
-import { WatchlistProvider } from "./context/WatchlistContext";
 
-<WatchlistProvider>
-  <App />
-</WatchlistProvider>
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
